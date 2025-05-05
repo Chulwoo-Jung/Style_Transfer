@@ -26,9 +26,6 @@ class StyleTransfer(nn.Module):
         self.style_layers = [conv['conv1_1'], conv['conv2_1'], conv['conv3_1'], conv['conv4_1'], conv['conv5_1']]
         self.content_layer = conv['conv4_2']
 
-        #TODO: deep image representation
-        pass
-
     
     def forward(self, x, mode:str):
         #TODO: slicing convolutional layer for each style and content layer
